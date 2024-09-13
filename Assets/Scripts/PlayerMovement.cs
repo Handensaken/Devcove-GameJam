@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
-    private bool readyToJump;
     [Header("Keybinds")]
     private float horizontalInput;
     private float verticalInput;
@@ -20,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     public Transform orientation;
     void Start()
     {
-        readyToJump = true;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
