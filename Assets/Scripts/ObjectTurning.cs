@@ -14,9 +14,9 @@ public class ObjectTurning : MonoBehaviour
     public LayerMask layerMask;
     public GameObject currentSelected;
     private Vector3 SelectedTransform;
+    private Quaternion SelectedRotation;
     public Transform inspectPos;
     RaycastHit hit;
-
 
     public float RotateSpeed = 2;
     public float deltaRotationX;
@@ -58,17 +58,18 @@ public class ObjectTurning : MonoBehaviour
             {
 
                 SelectedTransform = hit.collider.gameObject.transform.position;
+                SelectedRotation = hit.collider.gameObject.transform.rotation;
                 currentSelected = hit.collider.gameObject;
                 currentSelected.transform.position = inspectPos.position;
+                GameEventManger.instance.playerEvents.ChooseMimic();
             }
         }
         else
         {
-
             currentSelected.transform.position = SelectedTransform;
-            //currentSelected.transform.rotation = SelectedTransform.rotation;
+            currentSelected.transform.rotation = SelectedRotation;
             currentSelected = null;
+            GameEventManger.instance.playerEvents.ChooseMimic();
         }
-        GameEventManger.instance.playerEvents.ChooseMimic();
     }
 }
