@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
-    private bool readyToJump;
     [Header("Keybinds")]
     private float horizontalInput;
     private float verticalInput;
@@ -18,11 +18,20 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     private bool grounded;
     public Transform orientation;
+    private bool DisabledMovement = false;
     void Start()
     {
-        readyToJump = true;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        GameEventManger.instance.playerEvents.OnChooseMimic += DisableMovment;
+    }
+    void OnDisable()
+    {
+        GameEventManger.instance.playerEvents.OnChooseMimic -= DisableMovment;
+    }
+    private void DisableMovment()
+    {
+        DisabledMovement = !DisabledMovement;
     }
     void Update()
     {
@@ -55,8 +64,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MovePlayer()
     {
+        if (DisabledMovement) return;
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-        
+
         if (grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
