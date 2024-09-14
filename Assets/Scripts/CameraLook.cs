@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraLook : MonoBehaviour
 {
-     public float sensX;
+    public float sensX;
     public float sensY;
     public Transform orientation;
     public Camera playerCamera;
@@ -12,6 +12,7 @@ public class CameraLook : MonoBehaviour
     private float yRotation;
     private float verticalLookRotation;
     public GameObject cameraPos;
+    private bool DisabledCamera = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,16 +23,39 @@ public class CameraLook : MonoBehaviour
             playerCamera.transform.parent = null;
         }
     }
-
+    void Start()
+    {
+        GameEventManger.instance.playerEvents.OnChooseMimic += DisableCamera;
+    }
+    void OnDisable()
+    {
+        GameEventManger.instance.playerEvents.OnChooseMimic -= DisableCamera;
+    }
+    private void DisableCamera()
+    {
+        DisabledCamera = !DisabledCamera;
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        Cursor.visible = !Cursor.visible;
+    }
     // Update is called once per frame
     void LateUpdate()
     {
+        if (!DisabledCamera)
+        {
+            playerCamera.transform.position = cameraPos.transform.position;
+            playerCamera.transform.rotation = cameraPos.transform.rotation;
 
-        playerCamera.transform.position = cameraPos.transform.position;
-        playerCamera.transform.rotation = cameraPos.transform.rotation;
+            //look();
 
-        //look();
-        look2();
+            look2();
+        }
 
     }
     public void look()
