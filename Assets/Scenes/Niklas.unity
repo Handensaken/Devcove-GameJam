@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leaveText: {fileID: 937140995}
+  sceneName: EndScene
 --- !u!135 &712984522
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1178,10 +1179,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4551495721848250069, guid: bf3b6d44a058a064ebe41a8f01b42117, type: 3}
-      propertyPath: mimicStats
-      value: 
-      objectReference: {fileID: 11400000, guid: ee7368e6b5073994c8e737bade5920af, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

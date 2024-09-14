@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82cadc64bafbe3240beb37b59989b4b4, type: 3}
   m_Name: MimicStats
   m_EditorClassIdentifier: 
-  mimicAmount: 0
-  mimicsFound: 0
+  mimicAmount: 1
+  mimicsFound: 1
   nonMimicsDestroyed: 0

@@ -58,3 +58,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mimicAmount: 1
+  mimicStats: {fileID: 11400000, guid: ee7368e6b5073994c8e737bade5920af, type: 2}

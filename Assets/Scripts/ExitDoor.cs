@@ -1,20 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ExitDoor : MonoBehaviour
 {
     public GameObject leaveText;
-    // Start is called before the first frame update
+    public string sceneName;
     void Start()
     {
         leaveText.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
     public void OnTriggerStay(Collider collider)
     {
@@ -24,6 +20,11 @@ public class ExitDoor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 GameEventManger.instance.playerEvents.GameOver();
+                Debug.Log(sceneName);
+                if (sceneName != null)
+                {
+                    SceneManager.LoadScene(sceneName);
+                }
             }
         }
     }
