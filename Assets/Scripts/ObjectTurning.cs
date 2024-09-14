@@ -14,6 +14,7 @@ public class ObjectTurning : MonoBehaviour
     private Vector3 SelectedTransform;
     private Quaternion SelectedRotation;
     public Transform inspectPos;
+    public GameObject interactText;
 
     public float RotateSpeed = 2;
     private float deltaRotationX;
@@ -30,6 +31,10 @@ public class ObjectTurning : MonoBehaviour
     {
         if (currentSelected != null)
         {
+            if (interactText != null)
+            {
+                interactText.SetActive(false);
+            }
             deltaRotationX = -Input.GetAxis("Mouse X");
             deltaRotationY = Input.GetAxis("Mouse Y");
 
@@ -40,6 +45,26 @@ public class ObjectTurning : MonoBehaviour
                 currentSelected.transform.rotation;
             }
         }
+        else
+        {
+            RaycastHit hit;
+
+            if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, 20f, layerMask))
+            {
+                if (interactText != null)
+                {
+                    interactText.SetActive(true);
+                }
+            }
+            else
+            {
+                if (interactText != null)
+                {
+                    interactText.SetActive(false);
+                }
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.F))
         {
             SelectItem();
@@ -71,7 +96,8 @@ public class ObjectTurning : MonoBehaviour
     }
     public void PutDown(bool ShouldKill)
     {
-        if (ShouldKill){
+        if (ShouldKill)
+        {
             Destroy(currentSelected.gameObject);
         }
         if (currentSelected != null)
