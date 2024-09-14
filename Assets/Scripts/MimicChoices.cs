@@ -8,6 +8,8 @@ public class MimicChoices : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        kill.SetActive(false);
+        releace.SetActive(false);
         GameEventManger.instance.playerEvents.OnChooseMimic += EnnableGui;
     }
     void OnDisable()
@@ -21,6 +23,15 @@ public class MimicChoices : MonoBehaviour
     }
     private void EnnableGui()
     {
-        
+        kill.SetActive(!kill.activeSelf);
+        releace.SetActive(!releace.activeSelf);
+    }
+    public void KillMimic()
+    {
+        GameEventManger.instance.playerEvents.MenuChoice(true);
+    }
+    public void ReleaceMimic()
+    {
+        GameEventManger.instance.playerEvents.MenuChoice(false);
     }
 }

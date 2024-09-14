@@ -16,22 +16,20 @@ public class ObjectTurning : MonoBehaviour
     private Vector3 SelectedTransform;
     private Quaternion SelectedRotation;
     public Transform inspectPos;
-    RaycastHit hit;
 
     public float RotateSpeed = 2;
     public float deltaRotationX;
     public float deltaRotationY;
-
-    // Start is called before the first frame update
     void Start()
     {
-
+        GameEventManger.instance.playerEvents.OnMenuChoice += PutDown;
     }
-
-    // Update is called once per frame
+    void OnDisable()
+    {
+        GameEventManger.instance.playerEvents.OnMenuChoice -= PutDown;
+    }
     void Update()
     {
-
         if (currentSelected != null)
         {
             deltaRotationX = -Input.GetAxis("Mouse X");
@@ -51,25 +49,39 @@ public class ObjectTurning : MonoBehaviour
     }
     public void SelectItem()
     {
-
         if (currentSelected == null)
         {
+            RaycastHit hit;
+
             if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, 20f, layerMask))
             {
-
-                SelectedTransform = hit.collider.gameObject.transform.position;
-                SelectedRotation = hit.collider.gameObject.transform.rotation;
-                currentSelected = hit.collider.gameObject;
-                currentSelected.transform.position = inspectPos.position;
-                GameEventManger.instance.playerEvents.ChooseMimic();
+                PickUp(hit);
             }
         }
         else
         {
+            PutDown(false);
+        }
+    }
+    public void PickUp(RaycastHit hit)
+    {
+        SelectedTransform = hit.collider.gameObject.transform.position;
+        SelectedRotation = hit.collider.gameObject.transform.rotation;
+        currentSelected = hit.collider.gameObject;
+        currentSelected.transform.position = inspectPos.position;
+        GameEventManger.instance.playerEvents.ChooseMimic();
+    }
+    public void PutDown(bool ShouldKill)
+    {
+        if (ShouldKill){
+            Destroy(currentSelected.gameObject);
+        }
+        if (currentSelected != null)
+        {
             currentSelected.transform.position = SelectedTransform;
             currentSelected.transform.rotation = SelectedRotation;
-            currentSelected = null;
-            GameEventManger.instance.playerEvents.ChooseMimic();
         }
+        currentSelected = null;
+        GameEventManger.instance.playerEvents.ChooseMimic();
     }
 }
