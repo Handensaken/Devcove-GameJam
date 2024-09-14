@@ -21,4 +21,13 @@ public class PlayerEvents
             OnMenuChoice(ShouldKill);
         }
     }
+    public event Action OnGameOver;
+
+    public void GameOver()
+    {
+        if (OnGameOver != null)
+        {
+            OnGameOver();
+        }
+    }
 }

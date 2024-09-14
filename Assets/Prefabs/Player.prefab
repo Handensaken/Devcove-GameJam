@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 9211702667761687328}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,16 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cb82fa799fceb44ac8fc78767a6ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UICam: {fileID: 0}
   PlayerCam: {fileID: 156446236394853514}
   layerMask:
     serializedVersion: 2
     m_Bits: 128
-  currentSelected: {fileID: 0}
   inspectPos: {fileID: 3551965009285135689}
+  interactText: {fileID: 0}
   RotateSpeed: 2
-  deltaRotationX: 0
-  deltaRotationY: 0
 --- !u!1 &2005035375294161004
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Mimic : MonoBehaviour
 {
-    public bool isMimic;
+    public bool isMimic = false;
     public List<GameObject> mimicAttributes = new List<GameObject>();
     public void Awake(){
         for (int i = 0; i < mimicAttributes.Count; i++)
