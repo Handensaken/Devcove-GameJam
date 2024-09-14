@@ -8,19 +8,18 @@ public class ExitDoor : MonoBehaviour
 {
     public GameObject leaveText;
     public string sceneName;
+    private bool playerClose = false;
     void Start()
     {
         leaveText.SetActive(false);
     }
-    public void OnTriggerStay(Collider collider)
+    void Update()
     {
-        if (collider.gameObject.tag == "Player")
+        if (playerClose)
         {
-            leaveText.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 GameEventManger.instance.playerEvents.GameOver();
-                Debug.Log(sceneName);
                 if (sceneName != null)
                 {
                     SceneManager.LoadScene(sceneName);
@@ -28,11 +27,20 @@ public class ExitDoor : MonoBehaviour
             }
         }
     }
+    public void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            leaveText.SetActive(true);
+            playerClose = true;
+        }
+    }
     public void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "Player")
         {
             leaveText.SetActive(false);
+            playerClose = false;
         }
     }
 }
