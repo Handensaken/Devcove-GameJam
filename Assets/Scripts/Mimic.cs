@@ -5,23 +5,25 @@ using UnityEngine;
 
 public class Mimic : MonoBehaviour
 {
-    private bool isMimic;
+    public bool isMimic;
     public List<GameObject> mimicAttributes = new List<GameObject>();
+    public void Awake(){
+        for (int i = 0; i < mimicAttributes.Count; i++)
+        {
+            mimicAttributes[i].SetActive(false);
+        }
+    }
     private void RandomAttributes()
     {
-        if (mimicAttributes.Count == 0)
+        if (mimicAttributes.Count != 0)
         {
-            for (int i = 0; i < mimicAttributes.Count; i++)
-            {
-                mimicAttributes[i].SetActive(false);
-            }
             int random = Random.Range(0, mimicAttributes.Count);
             mimicAttributes[random].SetActive(true);
         }
     }
-    public void SetMimic(bool setMimic)
+    public void SetMimic()
     {
-        isMimic = setMimic;
+        isMimic = true;
         RandomAttributes();
     }
 }

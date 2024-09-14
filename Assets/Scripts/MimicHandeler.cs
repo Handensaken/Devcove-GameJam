@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class MimicHandeler : MonoBehaviour
 {
-    public List<GameObject> mimics = new List<GameObject>();
+    private List<GameObject> mimics = new List<GameObject>();
+    public int mimicAmount = 1;
     // Start is called before the first frame update
     void Start()
     {
         mimics = FindGameObjectsInLayer(7).ToList();
+        if (mimics.Count < mimicAmount){
+            mimicAmount = mimics.Count;
+        }
+        RandomMimics();
     }
 
     // Update is called once per frame
@@ -17,7 +22,17 @@ public class MimicHandeler : MonoBehaviour
     {
 
     }
-
+    private void RandomMimics()
+    {
+        List<GameObject> tempMimics = mimics;
+        for (int i = 0; i < mimicAmount; i++)
+        {
+            Debug.Log(mimicAmount);
+            int random = Random.Range(0, tempMimics.Count);
+            tempMimics[random].GetComponent<Mimic>().SetMimic();
+            tempMimics.RemoveAt(random);
+        }
+    }
     GameObject[] FindGameObjectsInLayer(int layer)
     {
         var goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[];
