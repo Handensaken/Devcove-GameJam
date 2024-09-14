@@ -8,18 +8,16 @@ using UnityEngine.EventSystems;
 
 public class ObjectTurning : MonoBehaviour
 {
-    protected Vector3 lastPos;
-    public Camera UICam;
     public Camera PlayerCam;
     public LayerMask layerMask;
-    public GameObject currentSelected;
+    private GameObject currentSelected;
     private Vector3 SelectedTransform;
     private Quaternion SelectedRotation;
     public Transform inspectPos;
 
     public float RotateSpeed = 2;
-    public float deltaRotationX;
-    public float deltaRotationY;
+    private float deltaRotationX;
+    private float deltaRotationY;
     void Start()
     {
         GameEventManger.instance.playerEvents.OnMenuChoice += PutDown;
