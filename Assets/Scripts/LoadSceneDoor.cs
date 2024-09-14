@@ -1,16 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class ExitDoor : MonoBehaviour
+public class LoadSceneDoor : MonoBehaviour
 {
-    public GameObject leaveText;
     public string sceneName;
     private bool playerClose = false;
-    void Start()
-    {
+    public GameObject leaveText;
+    void Start(){
         leaveText.SetActive(false);
     }
     void Update()
@@ -19,7 +18,6 @@ public class ExitDoor : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                GameEventManger.instance.playerEvents.GameOver();
                 if (sceneName != null)
                 {
                     Cursor.lockState = CursorLockMode.None;
