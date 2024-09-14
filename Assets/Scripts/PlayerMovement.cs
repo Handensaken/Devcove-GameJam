@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask groundMask;
-    private bool grounded;
     public Transform orientation;
     private bool DisabledMovement = false;
     void Start()
@@ -36,19 +35,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.1f, groundMask);
 
         MyInput();
         SpeedControl();
 
-        if (grounded)
-        {
-            rb.drag = groundDrag;
-        }
-        else
-        {
-            rb.drag = 0;
-        }
+
+        rb.drag = groundDrag;
+
 
     }
     void FixedUpdate()
@@ -67,10 +60,8 @@ public class PlayerMovement : MonoBehaviour
         if (DisabledMovement) return;
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        if (grounded)
-        {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
-        }
+
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
     }
     private void SpeedControl()
     {

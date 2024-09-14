@@ -13,4 +13,12 @@ public class PlayerEvents
             OnChooseMimic();
         }
     }
+    public event Action<bool> OnMenuChoice;
+    public void MenuChoice(bool ShouldKill)
+    {
+        if (OnMenuChoice != null)
+        {
+            OnMenuChoice(ShouldKill);
+        }
+    }
 }
