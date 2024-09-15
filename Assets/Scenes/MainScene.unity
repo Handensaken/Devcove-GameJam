@@ -50577,6 +50577,14 @@ PrefabInstance:
       propertyPath: m_Cameras.Array.data[0]
       value: 
       objectReference: {fileID: 128953005}
+    - target: {fileID: 7694914027586151505, guid: 5067ead4acafbdb45ba55c9d3da16608, type: 3}
+      propertyPath: sensX
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694914027586151505, guid: 5067ead4acafbdb45ba55c9d3da16608, type: 3}
+      propertyPath: sensY
+      value: 140
+      objectReference: {fileID: 0}
     - target: {fileID: 8740371234567141255, guid: 5067ead4acafbdb45ba55c9d3da16608, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17
