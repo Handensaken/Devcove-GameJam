@@ -18,6 +18,7 @@ public class ObjectTurning : MonoBehaviour
     private GameObject outlineObject;
 
     public float RotateSpeed = 2;
+    public float reach = 5f;
     private float deltaRotationX;
     private float deltaRotationY;
     [Header("Outline")]
@@ -55,7 +56,7 @@ public class ObjectTurning : MonoBehaviour
 
             RaycastHit hit;
 
-            if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, 20f, layerMask))
+            if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, reach, layerMask))
             {
                 if (outlineObject != null && outlineObject != hit.transform.gameObject)
                 {
