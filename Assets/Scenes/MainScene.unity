@@ -5210,7 +5210,8 @@ GameObject:
   - component: {fileID: 109601779}
   - component: {fileID: 109601778}
   - component: {fileID: 109601777}
-  m_Layer: 0
+  - component: {fileID: 109601781}
+  m_Layer: 7
   m_Name: bucket mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5307,6 +5308,23 @@ Transform:
   - {fileID: 1619914419}
   m_Father: {fileID: 1943582362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109601781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109601776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec626aa03f2ad2428d2817ef0110ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMimic: 0
+  mimicAttributes:
+  - {fileID: 52530065}
+  - {fileID: 1414136356}
+  - {fileID: 1619914418}
 --- !u!1 &109712575
 GameObject:
   m_ObjectHideFlags: 0
@@ -42998,7 +43016,8 @@ GameObject:
   - component: {fileID: 814027166}
   - component: {fileID: 814027165}
   - component: {fileID: 814027164}
-  m_Layer: 0
+  - component: {fileID: 814027168}
+  m_Layer: 7
   m_Name: bucket mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43095,6 +43114,23 @@ Transform:
   - {fileID: 1468526921}
   m_Father: {fileID: 1943582362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814027168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814027163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec626aa03f2ad2428d2817ef0110ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMimic: 0
+  mimicAttributes:
+  - {fileID: 1673669274}
+  - {fileID: 1499042885}
+  - {fileID: 1468526920}
 --- !u!1 &814093603
 GameObject:
   m_ObjectHideFlags: 0
@@ -85214,7 +85250,8 @@ GameObject:
   - component: {fileID: 1625863155}
   - component: {fileID: 1625863154}
   - component: {fileID: 1625863153}
-  m_Layer: 0
+  - component: {fileID: 1625863157}
+  m_Layer: 7
   m_Name: bucket mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85311,6 +85348,23 @@ Transform:
   - {fileID: 1118754461}
   m_Father: {fileID: 1943582362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625863157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625863152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec626aa03f2ad2428d2817ef0110ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMimic: 0
+  mimicAttributes:
+  - {fileID: 1664244421}
+  - {fileID: 362344547}
+  - {fileID: 1118754460}
 --- !u!1 &1627931695
 GameObject:
   m_ObjectHideFlags: 0
