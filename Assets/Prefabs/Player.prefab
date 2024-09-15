@@ -153,6 +153,7 @@ MonoBehaviour:
   inspectPos: {fileID: 3551965009285135689}
   interactText: {fileID: 0}
   RotateSpeed: 2
+  reach: 5
   OutlineWidth: 7
 --- !u!1 &2005035375294161004
 GameObject:
@@ -317,7 +318,7 @@ Transform:
   m_GameObject: {fileID: 5334807600858166095}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

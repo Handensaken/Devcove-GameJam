@@ -75,7 +75,7 @@ public class ObjectTurning : MonoBehaviour
                 {
                     hitOutline = hit.transform.gameObject.AddComponent<Outline>();
                     hitOutline.enabled = true;
-                    hitOutline.OutlineColor = outlineColor;
+                    hitOutline.OutlineColor = Color.white;
                     hitOutline.OutlineWidth = OutlineWidth;
                 }
                 outlineObject = hit.transform.gameObject;
