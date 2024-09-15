@@ -153,6 +153,8 @@ MonoBehaviour:
   inspectPos: {fileID: 3551965009285135689}
   interactText: {fileID: 0}
   RotateSpeed: 2
+  OutlineWidth: 7
+  outlineColor: {r: 0, g: 0.22813535, b: 1, a: 0}
 --- !u!1 &2005035375294161004
 GameObject:
   m_ObjectHideFlags: 0
