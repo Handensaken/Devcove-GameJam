@@ -154,7 +154,6 @@ MonoBehaviour:
   interactText: {fileID: 0}
   RotateSpeed: 2
   OutlineWidth: 7
-  outlineColor: {r: 0, g: 0.22813535, b: 1, a: 0}
 --- !u!1 &2005035375294161004
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +276,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084867579343257687}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bc1deef82345a0b418c6a11939352eaf, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
