@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 249294705086188447}
   - component: {fileID: 1931498372339542414}
   - component: {fileID: 4551495721848250069}
+  - component: {fileID: 7717608185588759734}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -59,3 +60,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mimicAmount: 1
   mimicStats: {fileID: 11400000, guid: ee7368e6b5073994c8e737bade5920af, type: 2}
+--- !u!114 &7717608185588759734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447200409139318155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8409c9016e53d45aec4ad9c975cffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedForLose: 3
+  sceneName: LoseScene

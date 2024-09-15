@@ -30,4 +30,12 @@ public class PlayerEvents
             OnGameOver();
         }
     }
+    public event Action OnDestroyedNonMimic;
+    public void DestroyedNonMimic()
+    {
+        if (OnDestroyedNonMimic != null)
+        {
+            OnDestroyedNonMimic();
+        }
+    }
 }

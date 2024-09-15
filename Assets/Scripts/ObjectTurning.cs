@@ -15,6 +15,7 @@ public class ObjectTurning : MonoBehaviour
     private Quaternion SelectedRotation;
     public Transform inspectPos;
     public GameObject interactText;
+    private int KillCounter = 0;
 
     public float RotateSpeed = 2;
     private float deltaRotationX;
@@ -119,6 +120,10 @@ public class ObjectTurning : MonoBehaviour
     {
         if (ShouldKill)
         {
+            if (currentSelected.GetComponent<Mimic>().isMimic == false)
+            {
+                GameEventManger.instance.playerEvents.DestroyedNonMimic();
+            }
             Destroy(currentSelected.gameObject);
         }
         if (currentSelected != null)
