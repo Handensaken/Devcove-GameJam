@@ -65842,7 +65842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4551495721848250069, guid: bf3b6d44a058a064ebe41a8f01b42117, type: 3}
       propertyPath: mimicAmount
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
