@@ -970,7 +970,7 @@ PrefabInstance:
     - target: {fileID: 9211702667761687328, guid: 5067ead4acafbdb45ba55c9d3da16608, type: 3}
       propertyPath: interactText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1533767745}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1306,6 +1306,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1253275006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8779179839957400899, guid: 25a2b68aff89d454490593467049c1c6, type: 3}
+  m_PrefabInstance: {fileID: 1533767744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1280424711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: MainMenu
-  leaveText: {fileID: 0}
+  leaveText: {fileID: 1253275006}
 --- !u!1 &1443067490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1796,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25a2b68aff89d454490593467049c1c6, type: 3}
+--- !u!1 &1533767745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706506582941016631, guid: 25a2b68aff89d454490593467049c1c6, type: 3}
+  m_PrefabInstance: {fileID: 1533767744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1543478389
 GameObject:
   m_ObjectHideFlags: 0
