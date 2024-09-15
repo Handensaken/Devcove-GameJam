@@ -26362,11 +26362,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2023928596849025658, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -15.300003
+      value: -15.300049
       objectReference: {fileID: 0}
     - target: {fileID: 2023928596849025658, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.199997
+      value: -2.2000122
       objectReference: {fileID: 0}
     - target: {fileID: 2594302620662729985, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_Pivot.x
@@ -26520,6 +26520,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 148d72ca1cbd7fb42a7ef0d6b2fb7b41, type: 3}
+    - target: {fileID: 5799884985253185238, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799884985253185238, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6235959788755537547, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_Name
       value: Canvas 1
