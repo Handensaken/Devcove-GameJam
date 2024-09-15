@@ -12,6 +12,7 @@ public class MimicReplacerObject : MonoBehaviour
     void OnGUI()
     {
         gameObjects = GameObject.FindGameObjectsWithTag("Mimicable").ToList();
+           Debug.Log(gameObjects.Count);
            foreach (GameObject G in gameObjects){
                 Vector3 pos = G.transform.position;
                 Quaternion rot = G.transform.rotation;
