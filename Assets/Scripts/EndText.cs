@@ -10,6 +10,7 @@ public class EndText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(stats.mimicAmount + " " + stats.mimicsFound);
         lose.SetActive(false);
         win.SetActive(false);
         if (stats.mimicAmount > stats.mimicsFound)
@@ -20,6 +21,7 @@ public class EndText : MonoBehaviour
         {
             win.SetActive(true);
         }
+        Debug.Log("idk");
     }
 
     // Update is called once per frame

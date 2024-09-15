@@ -210,8 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: ee7368e6b5073994c8e737bade5920af, type: 2}
-  win: {fileID: 1898426418}
-  lose: {fileID: 2062984613}
+  win: {fileID: 90422199}
+  lose: {fileID: 1085613915}
 --- !u!1 &550689995
 GameObject:
   m_ObjectHideFlags: 0
