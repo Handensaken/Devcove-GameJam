@@ -1700,7 +1700,7 @@ GameObject:
   - component: {fileID: 36478415}
   - component: {fileID: 36478414}
   - component: {fileID: 36478413}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2009,7 +2009,7 @@ GameObject:
   - component: {fileID: 38670422}
   - component: {fileID: 38670421}
   - component: {fileID: 38670420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4963,7 +4963,7 @@ GameObject:
   - component: {fileID: 121847140}
   - component: {fileID: 121847139}
   - component: {fileID: 121847138}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5409,7 +5409,7 @@ GameObject:
   - component: {fileID: 130887157}
   - component: {fileID: 130887156}
   - component: {fileID: 130887155}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7592,7 +7592,7 @@ GameObject:
   - component: {fileID: 186028651}
   - component: {fileID: 186028650}
   - component: {fileID: 186028649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8089,7 +8089,7 @@ GameObject:
   - component: {fileID: 192783382}
   - component: {fileID: 192783381}
   - component: {fileID: 192783380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13104,6 +13104,7 @@ GameObject:
   - component: {fileID: 311178414}
   - component: {fileID: 311178413}
   - component: {fileID: 311178415}
+  - component: {fileID: 311178416}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -13194,6 +13195,28 @@ MonoBehaviour:
   - {fileID: 14212363}
   - {fileID: 1734673935}
   - {fileID: 776672790}
+--- !u!64 &311178416
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311178411}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &312344244
 GameObject:
   m_ObjectHideFlags: 0
@@ -15300,7 +15323,7 @@ GameObject:
   - component: {fileID: 365451679}
   - component: {fileID: 365451678}
   - component: {fileID: 365451677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16377,7 +16400,7 @@ GameObject:
   - component: {fileID: 386307343}
   - component: {fileID: 386307342}
   - component: {fileID: 386307341}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19824,7 +19847,7 @@ GameObject:
   - component: {fileID: 467745546}
   - component: {fileID: 467745545}
   - component: {fileID: 467745544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21476,7 +21499,7 @@ GameObject:
   - component: {fileID: 514086934}
   - component: {fileID: 514086933}
   - component: {fileID: 514086932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23235,6 +23258,7 @@ GameObject:
   - component: {fileID: 559109270}
   - component: {fileID: 559109269}
   - component: {fileID: 559109271}
+  - component: {fileID: 559109272}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -23325,6 +23349,28 @@ MonoBehaviour:
   - {fileID: 736757635}
   - {fileID: 1370986090}
   - {fileID: 1390937169}
+--- !u!64 &559109272
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559109267}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &561156870
 GameObject:
   m_ObjectHideFlags: 0
@@ -23443,7 +23489,7 @@ GameObject:
   - component: {fileID: 562097667}
   - component: {fileID: 562097666}
   - component: {fileID: 562097665}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25942,6 +25988,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2023928596849025658, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -15.300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023928596849025658, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.199997
+      objectReference: {fileID: 0}
     - target: {fileID: 2594302620662729985, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -26026,9 +26080,113 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610859437068675125, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110630847185582014, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 83259c6f8b1ba9846bb0f9a10797c9fd, type: 2}
+    - target: {fileID: 5110630847185582014, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7011779140736974524, guid: 83259c6f8b1ba9846bb0f9a10797c9fd, type: 2}
+    - target: {fileID: 5110630847185582014, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370879046224089831, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799884985253185238, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799884985253185238, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 148d72ca1cbd7fb42a7ef0d6b2fb7b41, type: 3}
     - target: {fileID: 6235959788755537547, guid: 90757977e73231041b7a67264b246446, type: 3}
       propertyPath: m_Name
       value: Canvas 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899823545496554950, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899823545496554950, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 148d72ca1cbd7fb42a7ef0d6b2fb7b41, type: 3}
+    - target: {fileID: 7147562218225161773, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_margin.z
+      value: 31.295898
+      objectReference: {fileID: 0}
+    - target: {fileID: 7147562218225161773, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 83259c6f8b1ba9846bb0f9a10797c9fd, type: 2}
+    - target: {fileID: 7147562218225161773, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7011779140736974524, guid: 83259c6f8b1ba9846bb0f9a10797c9fd, type: 2}
+    - target: {fileID: 7147562218225161773, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126204676519853302, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126204676519853302, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126204676519853302, guid: 90757977e73231041b7a67264b246446, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.800003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38065,7 +38223,7 @@ GameObject:
   - component: {fileID: 890606160}
   - component: {fileID: 890606159}
   - component: {fileID: 890606158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39395,7 +39553,7 @@ GameObject:
   - component: {fileID: 923006660}
   - component: {fileID: 923006659}
   - component: {fileID: 923006658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41188,7 +41346,7 @@ GameObject:
   - component: {fileID: 956095099}
   - component: {fileID: 956095098}
   - component: {fileID: 956095097}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44008,6 +44166,7 @@ GameObject:
   - component: {fileID: 1026799149}
   - component: {fileID: 1026799148}
   - component: {fileID: 1026799150}
+  - component: {fileID: 1026799151}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -44098,6 +44257,28 @@ MonoBehaviour:
   - {fileID: 1604040397}
   - {fileID: 1724868148}
   - {fileID: 2040362953}
+--- !u!64 &1026799151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026799146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1029734204
 GameObject:
   m_ObjectHideFlags: 0
@@ -44283,6 +44464,7 @@ GameObject:
   - component: {fileID: 1047080071}
   - component: {fileID: 1047080070}
   - component: {fileID: 1047080072}
+  - component: {fileID: 1047080073}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -44373,6 +44555,28 @@ MonoBehaviour:
   - {fileID: 1292580262}
   - {fileID: 1698876413}
   - {fileID: 1186791457}
+--- !u!64 &1047080073
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047080068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1047160587
 GameObject:
   m_ObjectHideFlags: 0
@@ -44585,7 +44789,7 @@ GameObject:
   - component: {fileID: 1048363808}
   - component: {fileID: 1048363807}
   - component: {fileID: 1048363806}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46200,7 +46404,7 @@ GameObject:
   - component: {fileID: 1083341160}
   - component: {fileID: 1083341159}
   - component: {fileID: 1083341158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46309,6 +46513,7 @@ GameObject:
   - component: {fileID: 1085209127}
   - component: {fileID: 1085209126}
   - component: {fileID: 1085209128}
+  - component: {fileID: 1085209129}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -46399,6 +46604,28 @@ MonoBehaviour:
   - {fileID: 1889986231}
   - {fileID: 1603371763}
   - {fileID: 1558744480}
+--- !u!64 &1085209129
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085209124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1087091842
 GameObject:
   m_ObjectHideFlags: 0
@@ -46495,6 +46722,7 @@ GameObject:
   - component: {fileID: 1087599199}
   - component: {fileID: 1087599198}
   - component: {fileID: 1087599200}
+  - component: {fileID: 1087599201}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -46585,6 +46813,28 @@ MonoBehaviour:
   - {fileID: 1021437601}
   - {fileID: 841511896}
   - {fileID: 1091795491}
+--- !u!64 &1087599201
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087599196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1091795491
 GameObject:
   m_ObjectHideFlags: 0
@@ -47031,6 +47281,7 @@ GameObject:
   - component: {fileID: 1100042553}
   - component: {fileID: 1100042552}
   - component: {fileID: 1100042554}
+  - component: {fileID: 1100042555}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -47121,6 +47372,28 @@ MonoBehaviour:
   - {fileID: 1660740427}
   - {fileID: 156938531}
   - {fileID: 52807071}
+--- !u!64 &1100042555
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100042550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1100440185
 GameObject:
   m_ObjectHideFlags: 0
@@ -48297,7 +48570,7 @@ GameObject:
   - component: {fileID: 1121305978}
   - component: {fileID: 1121305977}
   - component: {fileID: 1121305976}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49214,6 +49487,7 @@ GameObject:
   - component: {fileID: 1148867082}
   - component: {fileID: 1148867081}
   - component: {fileID: 1148867083}
+  - component: {fileID: 1148867084}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -49304,6 +49578,28 @@ MonoBehaviour:
   - {fileID: 1207987777}
   - {fileID: 1319251478}
   - {fileID: 665224117}
+--- !u!64 &1148867084
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148867079}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1150586465
 GameObject:
   m_ObjectHideFlags: 0
@@ -50477,7 +50773,7 @@ GameObject:
   - component: {fileID: 1182064595}
   - component: {fileID: 1182064594}
   - component: {fileID: 1182064593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51040,7 +51336,7 @@ GameObject:
   - component: {fileID: 1192351001}
   - component: {fileID: 1192351000}
   - component: {fileID: 1192350999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54410,7 +54706,7 @@ GameObject:
   - component: {fileID: 1270634771}
   - component: {fileID: 1270634770}
   - component: {fileID: 1270634769}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55313,6 +55609,7 @@ GameObject:
   - component: {fileID: 1303106301}
   - component: {fileID: 1303106300}
   - component: {fileID: 1303106302}
+  - component: {fileID: 1303106303}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -55403,6 +55700,28 @@ MonoBehaviour:
   - {fileID: 1284586891}
   - {fileID: 865858291}
   - {fileID: 642701393}
+--- !u!64 &1303106303
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303106298}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1306432328
 GameObject:
   m_ObjectHideFlags: 0
@@ -56283,7 +56602,7 @@ GameObject:
   - component: {fileID: 1325213333}
   - component: {fileID: 1325213332}
   - component: {fileID: 1325213331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58702,6 +59021,7 @@ GameObject:
   - component: {fileID: 1404473280}
   - component: {fileID: 1404473279}
   - component: {fileID: 1404473281}
+  - component: {fileID: 1404473282}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -58792,6 +59112,28 @@ MonoBehaviour:
   - {fileID: 143713119}
   - {fileID: 1928208245}
   - {fileID: 2010736258}
+--- !u!64 &1404473282
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404473277}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1413373013
 GameObject:
   m_ObjectHideFlags: 0
@@ -59297,7 +59639,7 @@ GameObject:
   - component: {fileID: 1421433940}
   - component: {fileID: 1421433939}
   - component: {fileID: 1421433938}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62151,7 +62493,7 @@ GameObject:
   - component: {fileID: 1496884224}
   - component: {fileID: 1496884223}
   - component: {fileID: 1496884222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62662,6 +63004,7 @@ GameObject:
   - component: {fileID: 1512845923}
   - component: {fileID: 1512845922}
   - component: {fileID: 1512845924}
+  - component: {fileID: 1512845925}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -62752,6 +63095,28 @@ MonoBehaviour:
   - {fileID: 860760874}
   - {fileID: 2082901438}
   - {fileID: 30494547}
+--- !u!64 &1512845925
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512845920}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1517618475
 GameObject:
   m_ObjectHideFlags: 0
@@ -62764,7 +63129,7 @@ GameObject:
   - component: {fileID: 1517618478}
   - component: {fileID: 1517618477}
   - component: {fileID: 1517618476}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65153,7 +65518,7 @@ GameObject:
   - component: {fileID: 1572506286}
   - component: {fileID: 1572506285}
   - component: {fileID: 1572506284}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68771,6 +69136,7 @@ GameObject:
   - component: {fileID: 1650639265}
   - component: {fileID: 1650639264}
   - component: {fileID: 1650639266}
+  - component: {fileID: 1650639267}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -68861,6 +69227,28 @@ MonoBehaviour:
   - {fileID: 1873293955}
   - {fileID: 1943281830}
   - {fileID: 1917119475}
+--- !u!64 &1650639267
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650639262}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1651155480
 GameObject:
   m_ObjectHideFlags: 0
@@ -70745,7 +71133,7 @@ GameObject:
   - component: {fileID: 1698473016}
   - component: {fileID: 1698473015}
   - component: {fileID: 1698473014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71214,6 +71602,7 @@ GameObject:
   - component: {fileID: 1712212934}
   - component: {fileID: 1712212933}
   - component: {fileID: 1712212935}
+  - component: {fileID: 1712212936}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -71304,6 +71693,28 @@ MonoBehaviour:
   - {fileID: 1044428682}
   - {fileID: 666101376}
   - {fileID: 424189908}
+--- !u!64 &1712212936
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712212931}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &1713521885
 GameObject:
   m_ObjectHideFlags: 0
@@ -76791,7 +77202,7 @@ GameObject:
   - component: {fileID: 1853193011}
   - component: {fileID: 1853193010}
   - component: {fileID: 1853193009}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77271,7 +77682,7 @@ GameObject:
   - component: {fileID: 1869362707}
   - component: {fileID: 1869362706}
   - component: {fileID: 1869362705}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78106,7 +78517,7 @@ GameObject:
   - component: {fileID: 1892357351}
   - component: {fileID: 1892357350}
   - component: {fileID: 1892357349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83646,7 +84057,7 @@ GameObject:
   - component: {fileID: 2035594726}
   - component: {fileID: 2035594725}
   - component: {fileID: 2035594724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mug mimic(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87681,6 +88092,7 @@ GameObject:
   - component: {fileID: 2131695343}
   - component: {fileID: 2131695342}
   - component: {fileID: 2131695344}
+  - component: {fileID: 2131695345}
   m_Layer: 7
   m_Name: default
   m_TagString: Untagged
@@ -87771,6 +88183,28 @@ MonoBehaviour:
   - {fileID: 1713521885}
   - {fileID: 2112054203}
   - {fileID: 486128523}
+--- !u!64 &2131695345
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131695340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: a804fd13ac10b0e4ba33b592f5657535, type: 3}
 --- !u!1 &2134129312
 GameObject:
   m_ObjectHideFlags: 0
