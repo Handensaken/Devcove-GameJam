@@ -22,8 +22,11 @@ public class NonMimicDestroyedCounter : MonoBehaviour
         Count++;
         if (Count == destroyedForLose)
         {
+
             if (sceneName != null)
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 SceneManager.LoadScene(sceneName);
             }
         }
