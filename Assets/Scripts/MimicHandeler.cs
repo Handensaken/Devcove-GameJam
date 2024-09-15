@@ -25,8 +25,6 @@ public class MimicHandeler : MonoBehaviour
         }
         RandomMimics();
         GameEventManger.instance.playerEvents.OnGameOver += CreateStats;
-        Debug.Log(mimics.Count);
-
     }
     void OnDisable()
     {
