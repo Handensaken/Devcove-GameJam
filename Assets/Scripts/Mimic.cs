@@ -7,7 +7,15 @@ public class Mimic : MonoBehaviour
 {
     public bool isMimic = false;
     public List<GameObject> mimicAttributes = new List<GameObject>();
-    public void Awake(){
+    public void Awake()
+    {
+        if (mimicAttributes.Count == 0)
+        {
+            foreach (Transform child in transform)
+            {
+                mimicAttributes.Add(child.gameObject);
+            }
+        }
         for (int i = 0; i < mimicAttributes.Count; i++)
         {
             mimicAttributes[i].SetActive(false);

@@ -13,6 +13,12 @@ public class MimicHandeler : MonoBehaviour
     void Start()
     {
         mimics = FindGameObjectsInLayer(7).ToList();
+        for (int i = 0; i < mimics.Count; i++)
+        {
+            if(mimics[i].GetComponent<Mimic>() == null){
+                mimics[i].AddComponent<Mimic>();
+            }
+        }
         if (mimics.Count < mimicAmount)
         {
             mimicAmount = mimics.Count;
