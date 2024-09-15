@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Green book Mimic
       objectReference: {fileID: 0}
+    - target: {fileID: 8216612871401693216, guid: caff45e70ae1c1041b363fc29a43e453, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8740525298417449626, guid: caff45e70ae1c1041b363fc29a43e453, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
