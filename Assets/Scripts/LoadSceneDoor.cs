@@ -12,6 +12,9 @@ public class LoadSceneDoor : MonoBehaviour
     void Start(){
         leaveText.SetActive(false);
     }
+    void OnDisable(){
+        
+    }
     void Update()
     {
         if (playerClose)
