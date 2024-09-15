@@ -19,6 +19,10 @@ public class ObjectTurning : MonoBehaviour
     public float RotateSpeed = 2;
     private float deltaRotationX;
     private float deltaRotationY;
+    [Header("Outline")]
+    public int OutlineWidth;
+    Color outlineColor = Color.white;
+    Outline hitOutline;
     void Start()
     {
         GameEventManger.instance.playerEvents.OnMenuChoice += PutDown;
@@ -47,6 +51,7 @@ public class ObjectTurning : MonoBehaviour
         }
         else
         {
+
             RaycastHit hit;
 
             if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, 20f, layerMask))
@@ -55,12 +60,28 @@ public class ObjectTurning : MonoBehaviour
                 {
                     interactText.SetActive(true);
                 }
+                hitOutline = hit.transform.gameObject.GetComponent<Outline>();
+                if (hitOutline != null)
+                {
+                    hitOutline.enabled = true;
+                }
+                else
+                {
+                    hitOutline = hit.transform.gameObject.AddComponent<Outline>();
+                    hitOutline.enabled = true;
+                    hitOutline.OutlineColor = outlineColor;
+                    hitOutline.OutlineWidth = OutlineWidth;
+                }
             }
             else
             {
                 if (interactText != null)
                 {
                     interactText.SetActive(false);
+                }
+                if (hitOutline != null)
+                {
+                    hitOutline.enabled = false;
                 }
             }
         }
