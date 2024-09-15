@@ -43,6 +43,7 @@ public class CameraLook : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
         Cursor.visible = !Cursor.visible;
+        
     }
     // Update is called once per frame
     void LateUpdate()
