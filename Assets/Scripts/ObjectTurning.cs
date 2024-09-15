@@ -15,7 +15,7 @@ public class ObjectTurning : MonoBehaviour
     private Quaternion SelectedRotation;
     public Transform inspectPos;
     public GameObject interactText;
-    private int KillCounter = 0;
+    private GameObject outlineObject;
 
     public float RotateSpeed = 2;
     private float deltaRotationX;
@@ -57,11 +57,15 @@ public class ObjectTurning : MonoBehaviour
 
             if (Physics.Raycast(PlayerCam.transform.position, PlayerCam.transform.forward, out hit, 20f, layerMask))
             {
+                if (outlineObject != null && outlineObject != hit.transform.gameObject)
+                {
+                    hitOutline.enabled = false;
+                }
+                hitOutline = hit.transform.gameObject.GetComponent<Outline>();
                 if (interactText != null)
                 {
                     interactText.SetActive(true);
                 }
-                hitOutline = hit.transform.gameObject.GetComponent<Outline>();
                 if (hitOutline != null)
                 {
                     hitOutline.enabled = true;
@@ -73,6 +77,7 @@ public class ObjectTurning : MonoBehaviour
                     hitOutline.OutlineColor = outlineColor;
                     hitOutline.OutlineWidth = OutlineWidth;
                 }
+                outlineObject = hit.transform.gameObject;
             }
             else
             {
