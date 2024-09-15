@@ -11,6 +11,9 @@ public class LightFlickerBehaviour : MonoBehaviour
     private float maxInterval = 1f;
 [SerializeField]
 private float minIntensity = 0.3f;
+[SerializeField]
+private float maxIntensity = 1f;
+
     float targetIntensity;
     float lastIntensity;
     float interval;
@@ -27,7 +30,7 @@ private float minIntensity = 0.3f;
         if (timer > interval)
         {
             lastIntensity = myLight.intensity;
-            targetIntensity = Random.Range(minIntensity, 1f);
+            targetIntensity = Random.Range(minIntensity, maxIntensity);
             timer = 0;
             interval = Random.Range(0, maxInterval);
         }
