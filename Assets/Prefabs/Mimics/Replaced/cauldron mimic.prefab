@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3332624}
   - component: {fileID: 2336098}
   - component: {fileID: 6424396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cauldron mimic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,9 +115,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 444700}
     m_Modifications:
+    - target: {fileID: 1493619026682143937, guid: e3c6e1b9a96fc83409057e67398ee560, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3569201238671426000, guid: e3c6e1b9a96fc83409057e67398ee560, type: 3}
       propertyPath: m_Name
       value: Eye 3 plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569201238671426000, guid: e3c6e1b9a96fc83409057e67398ee560, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5132058780412325086, guid: e3c6e1b9a96fc83409057e67398ee560, type: 3}
       propertyPath: m_LocalPosition.x
