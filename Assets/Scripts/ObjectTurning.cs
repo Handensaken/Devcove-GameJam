@@ -91,7 +91,7 @@ public class ObjectTurning : MonoBehaviour
         SelectedTransform = hit.collider.gameObject.transform.position;
         SelectedRotation = hit.collider.gameObject.transform.rotation;
         currentSelected = hit.collider.gameObject;
-        currentSelected.transform.position = inspectPos.position;
+        currentSelected.transform.position = new Vector3(1000, 1000, 1000);
         GameEventManger.instance.playerEvents.ChooseMimic();
     }
     public void PutDown(bool ShouldKill)
